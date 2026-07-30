@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Chorros - Registro</title>
+
+    <link rel="stylesheet" href="Syle.css">
+</head>
+
+<body>
+
+    <!-- Fondo decorativo -->
+    <div class="burbujas-bg">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+
+        <div class="cangrejo-fondo">🦀</div>
+        <div class="cangrejo-fondo">🦐</div>
+        <div class="cangrejo-fondo">🦀</div>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="contenedor">
+
+        <h1>🦐 Bienvenidos a Los Chorros 🦐</h1>
+
+        <p>
+            Los Chorros es una de las zonas turísticas más conocidas de El Salvador.
+            Aquí podrás encontrar áreas recreativas, naturaleza y espacios para disfrutar en familia.
+        </p>
+
+        <p>
+            Si deseas recibir más información sobre este destino turístico,
+            completa el siguiente formulario.
+        </p>
+
+        <!-- Formulario -->
+        <form id="formRegistro">
+
+            <div class="grupo">
+                <label for="usuario">Nombre de usuario</label>
+
+                <input
+                    type="text"
+                    id="usuario"
+                    placeholder="Ingrese su nombre">
+                
+                <small id="error-usuario" class="error"></small>
+            </div>
+
+            <div class="grupo">
+                <label for="correo">Correo electrónico</label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="Ingrese su correo electrónico">
+
+                <small id="error-correo" class="error"></small>
+            </div>
+
+            <div class="grupo">
+                <label for="nivel">
+                    ¿Cómo supo de nosotros?
+                </label>
+
+                <select id="nivel">
+
+                    <option value="Elija">
+                        Seleccione una opción
+                    </option>
+
+                    <option value="tiktok">
+                        TikTok
+                    </option>
+
+                    <option value="instagram">
+                        Instagram
+                    </option>
+
+                    <option value="messenger">
+                        Messenger
+                    </option>
+
+                    <option value="otro">
+                        Otro
+                    </option>
+
+                </select>
+
+                <small id="error-nivel" class="error"></small>
+            </div>
+
+            <div class="contenedor-botones">
+
+                <button
+                    type="submit"
+                    class="btn-registrarse">
+
+                    Registrarse 🦑
+
+                </button>
+
+            </div>
+
+        </form>
+
+        <!-- Imagen -->
+        <div class="imagen-turistica">
+            <img
+                src="imagen.webp"
+                alt="Zona turística Los Chorros">
+        </div>
+
+    </main>
+
+    <script src="Script.js"></script>
+
+</body>
+
+</html>
